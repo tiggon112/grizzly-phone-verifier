@@ -18,7 +18,7 @@ const main = async () => {
 
       let activation_id, phone_number;
       const phoneRequestResult = await axios(
-        `https://api.grizzlysms.com/stubs/handler_api.php?api_key=${api_key}&action=getNumber&service=${service}&country=${36}`
+        `https://api.grizzlysms.com/stubs/handler_api.php?api_key=${api_key}&action=getNumber&service=${service}&country=${10016}`
       );
       console.log(phoneRequestResult.data.split(":")[0]);
       if (phoneRequestResult.data.split(":")[0] == "ACCESS_NUMBER") {
